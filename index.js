@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // let a=23;
 // if (a>10){
 //     let a=45;
@@ -100,15 +100,15 @@
 // setTimeout(()=>{console.log("two")},5000);
 // console.log("three");
 
-function sumofSqrt(a,b){
-    return Math.sqrt(a) + Math.sqrt(b);
-}
-function myname(){
-    return "My name is Jishant";
-}
+// function sumofSqrt(a,b){
+//     return Math.sqrt(a) + Math.sqrt(b);
+// }
+// function myname(){
+//     return "My name is Jishant";
+// }
 
-console.log(sumofSqrt(16, 25) + " " + myname());
-=======
+// console.log(sumofSqrt(16, 25) + " " + myname());
+
 // let a=23;
 // if (a>10){
 //     let a=45;
@@ -206,7 +206,35 @@ console.log(sumofSqrt(16, 25) + " " + myname());
 //     },1000)
 // }, 1000)
 
-console.log("one");
-setTimeout(()=>{console.log("two")},5000);
-console.log("three");
->>>>>>> e7386d0925dea42d305b5c44486d0730a90fd3da
+// console.log("one");
+// setTimeout(()=>{console.log("two")},5000);
+// console.log("three");
+
+
+// const myPromise = new Promise((resolve , reject) =>{
+//     let username ="jishant";
+//     let password ="12345";
+//     if(username == "jishant" && password == "12345"){
+//         resolve("success");
+//     } else {
+//         reject("invalid user");
+//     }
+// })
+
+// myPromise.then((msg)=>{
+//     console.log(msg);
+// }).catch((msg)=>{
+//     console.log(msg);
+// })
+// .finally(()=>console.log("All resources has been closed"));
+async function loginHandler(){
+    try{
+        const loginStatus=await myPromise;
+        console.log(loginStatus);
+    } catch(e){
+        console.log(e);
+    } finally{
+        console.log("closing all thw open resources..");
+    }
+}   
+loginHandler();
