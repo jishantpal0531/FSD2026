@@ -211,6 +211,10 @@
 // console.log("three");
 
 
+
+//-----------promise in JS----------//
+
+
 // const myPromise = new Promise((resolve , reject) =>{
 //     let username ="jishant";
 //     let password ="12345";
@@ -227,6 +231,11 @@
 //     console.log(msg);
 // })
 // .finally(()=>console.log("All resources has been closed"));
+
+
+
+
+
 async function loginHandler(){
     try{
         const loginStatus=await myPromise;
