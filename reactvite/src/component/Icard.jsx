@@ -8,7 +8,8 @@ function Icard(data) {
           margin: "20px",
           padding: "20px",
           textAlign: "center",
-          borderRadius: "10px"
+          borderRadius: "10px",
+        
         }}
       >
         <img
@@ -17,7 +18,9 @@ function Icard(data) {
           style={{
             width: "150px",
             height: "180px",
-            objectFit: "cover"
+            objectFit: "cover",
+            borderRadius: "50%",
+            flexShrink: 0 
           }}
         />
   
